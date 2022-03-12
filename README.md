@@ -12,8 +12,7 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
 - [Sign-off Timing Analysis - Basics to Advanced](#sign-off-timing-analysis---basics-to-advanced) 
  
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
- [Day 1](#day-1) 
+* - [Day 1](#day-1) 
       - [- STA Definition](#--sta-definition) 
       - [- Timing Paths](#--timing-paths) 
       - [- Timing path elements](#--timing-path-elements) 
@@ -28,7 +27,7 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
         * [Inputs to OpenTimer,](#inputs-to-opentimer-) 
         * [Constraints creation](#constraints-creation) 
         * [OpenTimer RunscriptPaste](#opentimer-runscriptpaste) 
-   - [Day 2](#day-2)
+  * - [Day 2](#day-2)
     + [- Other timing checks](#--other-timing-checks)
     + [- Design Rule Checks](#--design-rule-checks)
     + [- Latch Timing](#--latch-timing)
@@ -37,7 +36,8 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
       - [Liberty Files,](#liberty-files-)
       - [SPEF,](#spef-)
       - [timing reports](#timing-reports)
-   - [Day 3](#day-3)
+     
+  - [Day 3](#day-3)
     + [- Multiple Clocks](#--multiple-clocks)
     + [- Timing arcs and Timing Sense](#--timing-arcs-and-timing-sense)
     + [- Cell Delays and Clock Network](#--cell-delays-and-clock-network)
@@ -46,7 +46,28 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
     + [- Day 3 labs](#--day-3-labs)
       - [Understanding full reg to reg STA analysis,](#understanding-full-reg-to-reg-sta-analysis-)
       - [slack computation and review setup check report](#slack-computation-and-review-setup-check-report)
+     
+ - [Day 4](#day-4)
+    + [- Lectures and Labs](#--lectures-and-labs)
+    + [- Crosstalk and Noise](#--crosstalk-and-noise)
+    + [- Operating modes and other variations](#--operating-modes-and-other-variations)
+    + [- Clock Gating Checks](#--clock-gating-checks)
+    + [- Checks on Async Pins](#--checks-on-async-pins)
+    + [- Day4 labs](#--day4-labs)
+      - [Understanding clock gating check,](#understanding-clock-gating-check-)
+      - [async pin checks](#async-pin-checks)
+      
+      
+ - [Day 5](#day-5)
+    + [- Clock groups](#--clock-groups)
+    + [- Clock properties](#--clock-properties)
+    + [- Timing exceptions](#--timing-exceptions)
+    + [- Multiple modes](#--multiple-modes)
+    + [- Day 5 labs](#--day-5-labs)
+      - [Revisit slack computation,](#revisit-slack-computation-)
+      - [understand CRPR and ECO insertion](#understand-crpr-and-eco-insertion)
 
+ 
 
  
 
@@ -116,7 +137,36 @@ report_checks -group_count 5 **
 ####   - Day 3 labs 
    #####  Understanding full reg to reg STA analysis,
    #####  slack computation
-   #####  review setup check report 
+   #####  review setup check report
+   
+    
+## Day 4
+####    - Lectures and Labs 
+####    - Crosstalk and Noise
+####    - Operating modes and other variations
+####    - Clock Gating Checks
+####    - Checks on Async Pins
+####    - Day4 labs 
+   #####  Understanding clock gating check,
+   #####  async pin checks 
+   
+
+## Day 5
+####    - Clock groups
+####    - Clock properties
+####    - Timing exceptions
+####    - Multiple modes
+####    - Day 5 labs 
+   #####  Revisit slack computation,
+   #####  understand CRPR and ECO insertion
+   
+   
+   
+
+
+ 
+   
+   
     
    
    
