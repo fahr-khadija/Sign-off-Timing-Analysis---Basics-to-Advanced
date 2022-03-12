@@ -27,7 +27,7 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
         * [Inputs to OpenTimer,](#inputs-to-opentimer-) 
         * [Constraints creation](#constraints-creation) 
         * [OpenTimer RunscriptPaste](#opentimer-runscriptpaste) 
-  * - [Day 2](#day-2)
+ - [Day 2](#day-2)
     + [- Other timing checks](#--other-timing-checks)
     + [- Design Rule Checks](#--design-rule-checks)
     + [- Latch Timing](#--latch-timing)
@@ -37,7 +37,7 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
       - [SPEF,](#spef-)
       - [timing reports](#timing-reports)
      
-  - [Day 3](#day-3)
+ - [Day 3](#day-3)
     + [- Multiple Clocks](#--multiple-clocks)
     + [- Timing arcs and Timing Sense](#--timing-arcs-and-timing-sense)
     + [- Cell Delays and Clock Network](#--cell-delays-and-clock-network)
@@ -78,22 +78,52 @@ Static timing analysis (STA) is a method of validating the timing performance of
 
 
 ####  - Timing Paths
+
 ####  - Timing path elements
+
 ####  - Setup & Hold Checks
+
 ####  - Slack Calculation
+
 ####  - SDC Overview
+
 ####  - Clocks
+
 ####  - Generated Clocks
+
 ####  - Boundary Constraints
+
+
 ####  - Day1 Labs - 
    ##### OpenTimer Introduction,
-   ##### Inputs to OpenTimer, 
-   [run.log](https://github.com/fahr-khadija/Sign-off-Timing-Analysis---Basics-to-Advanced/files/8238024/run.log)
+   • OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats.
+   • Verilog netlist
+   • Liberty library
+   • SDC timing constraints
+   • SDF delay annotation
+   • SPEF parasitics
+   • OpenSTA is a Static Timing analysis (STA) tool  An STA tool takes design, standard cell, constraints as input and perform timing checks on the design
+• The kind and type of checks we have covered in lectures
+• Delay calculation
+• Integrated Dartu/Menezes/Pileggi RC effective capacitance algorithm
+• External delay calculator API
+• Analysis
+• Report timing checks -from, -through, -to, multiple paths to endpoint
+• Report delay calculation
+• Check timing setup
 
-   
+• OpenSTA is architected to be easily bolted on to other tools as a timing engine. By using a network adapter, OpenSTA can access the host netlist data structures without duplicating them.
+• Query based incremental update of delays, arrival and required times • Simulator to propagate constants from constraints and netlist tie high/low
+• OpenSTA pdf doc  https://github.com/The-OpenROAD-Project/OpenSTA/blob/master/doc/OpenSTA.pdf
+  
    ##### Constraints creation 
    /home/khadija.fahr/Desktop/openSTA_sta_workshop/vlsideepdive_openSTA_labs/lab1/simple.sdc
-   ## reading liberty model
+  
+  ##### Inputs to OpenTimer, 
+   
+  liberty,netlist,constraintes 
+  
+## reading liberty model
 **read_liberty ../sky130_fd_sc_hd__tt_025C_1v80.lib
 ## reading netlist model
 read_verilog simple.v
@@ -105,8 +135,10 @@ report_checks -group_count 5 **
 
    
    ##### OpenTimer RunscriptPaste 
+   • Run openSTA using command 
+   sta run.tcl -exit | tee run.log”
 
-/home/khadija.fahr/Desktop/openSTA_sta_workshop/vlsideepdive_openSTA_labs/lab1/run.tcl
+
 
   
 ## Day 2
