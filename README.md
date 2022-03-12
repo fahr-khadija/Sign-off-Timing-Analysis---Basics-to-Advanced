@@ -183,7 +183,9 @@ read_verilog simple.v
 link_design simple
 read_spef simple.spef
 read_sdc simple.sdc
-report_checks -through u1/a ""
+report_checks -through u1/a
+report_timing –num_paths 5
+Rerun ‘sta run.tcl –exit | tee run.log’ ""
 
 
 
