@@ -44,6 +44,22 @@ Static timing analysis (STA) is a method of validating the timing performance of
 ####  - Day1 Labs - 
    ##### OpenTimer Introduction,
    ##### Inputs to OpenTimer, 
+   [run.log](https://github.com/fahr-khadija/Sign-off-Timing-Analysis---Basics-to-Advanced/files/8238024/run.log)
+
+   
    ##### Constraints creation 
+   /home/khadija.fahr/Desktop/openSTA_sta_workshop/vlsideepdive_openSTA_labs/lab1/simple.sdc
+   ## reading liberty model
+**read_liberty ../sky130_fd_sc_hd__tt_025C_1v80.lib
+## reading netlist model
+read_verilog simple.v
+link_design simple
+## Parsing constraints
+read_sdc -echo simple.sdc
+## report timing reports for 5 paths
+report_checks -group_count 5 **
+
+   
    ##### OpenTimer RunscriptPaste 
 
+/home/khadija.fahr/Desktop/openSTA_sta_workshop/vlsideepdive_openSTA_labs/lab1/run.tcl
