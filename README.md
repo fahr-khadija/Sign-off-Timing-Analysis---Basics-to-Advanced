@@ -10,7 +10,10 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
 # Sign-off-Timing-Analysis---Basics-to-Advanced
 
 - [Sign-off Timing Analysis - Basics to Advanced](#sign-off-timing-analysis---basics-to-advanced) 
-  * [Day 1](#day-1) 
+ 
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+ [Day 1](#day-1) 
       - [- STA Definition](#--sta-definition) 
       - [- Timing Paths](#--timing-paths) 
       - [- Timing path elements](#--timing-path-elements) 
@@ -25,6 +28,26 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
         * [Inputs to OpenTimer,](#inputs-to-opentimer-) 
         * [Constraints creation](#constraints-creation) 
         * [OpenTimer RunscriptPaste](#opentimer-runscriptpaste) 
+   - [Day 2](#day-2)
+    + [- Other timing checks](#--other-timing-checks)
+    + [- Design Rule Checks](#--design-rule-checks)
+    + [- Latch Timing](#--latch-timing)
+    + [- STA Text Report](#--sta-text-report)
+    + [- Day 2 labs -](#--day-2-labs--)
+      - [Liberty Files,](#liberty-files-)
+      - [SPEF,](#spef-)
+      - [timing reports](#timing-reports)
+   - [Day 3](#day-3)
+    + [- Multiple Clocks](#--multiple-clocks)
+    + [- Timing arcs and Timing Sense](#--timing-arcs-and-timing-sense)
+    + [- Cell Delays and Clock Network](#--cell-delays-and-clock-network)
+    + [- Setup and Hold Detailed](#--setup-and-hold-detailed)
+    + [- STA Text Report](#--sta-text-report)
+    + [- Day 3 labs](#--day-3-labs)
+      - [Understanding full reg to reg STA analysis,](#understanding-full-reg-to-reg-sta-analysis-)
+      - [slack computation and review setup check report](#slack-computation-and-review-setup-check-report)
+
+
  
 
 ## Day 1
@@ -63,3 +86,42 @@ report_checks -group_count 5 **
    ##### OpenTimer RunscriptPaste 
 
 /home/khadija.fahr/Desktop/openSTA_sta_workshop/vlsideepdive_openSTA_labs/lab1/run.tcl
+
+  
+## Day 2
+####   - Other timing checks
+
+####   - Design Rule Checks
+
+
+####   - Latch Timing
+
+####   - STA Text Report
+
+####   - Day 2 labs -  
+
+   ##### Liberty Files,
+   
+   ##### SPEF, 
+   
+   ##### timing reports 
+   
+   
+  ## Day 3
+####   - Multiple Clocks  
+####   - Timing arcs and Timing Sense
+####   - Cell Delays and Clock Network
+####   - Setup and Hold Detailed
+####   - STA Text Report
+####   - Day 3 labs 
+   #####  Understanding full reg to reg STA analysis,
+   #####  slack computation
+   #####  review setup check report 
+    
+   
+   
+
+
+
+
+
