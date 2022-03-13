@@ -123,6 +123,12 @@ Static timing analysis (STA) is a method of validating the timing performance of
    
   liberty,netlist,constraintes 
   
+  we look into library What difference you see between NAND2_X1 and NAND3_X1
+NAND2_X1 with 2 input a b and 1 output o
+NAND3_X1 with 3 input a b  c and 1 output o
+
+What is the difference between ‘simple_max.lib’  used for max delay 
+and ‘simple_min.lib’ used for min delay 
 ## reading liberty model
 **read_liberty ../sky130_fd_sc_hd__tt_025C_1v80.lib
 ## reading netlist model
@@ -204,6 +210,14 @@ https://github.com/fahr-khadija/Sign-off-Timing-Analysis---Basics-to-Advanced/fi
 ####   - STA Text Report
 ####   - Day 3 labs 
    #####  Understanding full reg to reg STA analysis,
+   read_liberty s27_Late.lib
+read_verilog s27.v
+link_design s27
+read_sdc s27.sdc
+report_checks -from F1/CK
+report_checks -from F1/CK -endpoint_count 100
+
+
    #####  slack computation
    #####  review setup check report
    
