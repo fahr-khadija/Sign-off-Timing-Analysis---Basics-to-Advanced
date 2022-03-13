@@ -190,7 +190,7 @@ report_timing –num_paths 5
 Rerun ‘sta run.tcl –exit | tee run.log’ ""
 
 ######run.log
-
+https://github.com/fahr-khadija/Sign-off-Timing-Analysis---Basics-to-Advanced/files/8239866/run.log
 
 
 
