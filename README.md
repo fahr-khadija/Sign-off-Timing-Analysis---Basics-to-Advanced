@@ -217,6 +217,8 @@ read_sdc s27.sdc
 report_checks -from F1/CK
 report_checks -from F1/CK -endpoint_count 100
 
+https://github.com/fahr-khadija/Sign-off-Timing-Analysis---Basics-to-Advanced/files/8240120/run.log
+
 
    #####  slack computation
    #####  review setup check report
