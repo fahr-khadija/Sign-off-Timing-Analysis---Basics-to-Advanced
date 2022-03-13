@@ -138,7 +138,9 @@ report_checks -group_count 5 **
    • Run openSTA using command 
    sta run.tcl -exit | tee run.log”
 
+####run.log 
 
+https://github.com/fahr-khadija/Sign-off-Timing-Analysis---Basics-to-Advanced/files/8239864/run.log
 
   
 ## Day 2
@@ -186,6 +188,9 @@ read_sdc simple.sdc
 report_checks -through u1/a
 report_timing –num_paths 5
 Rerun ‘sta run.tcl –exit | tee run.log’ ""
+
+######run.log
+
 
 
 
